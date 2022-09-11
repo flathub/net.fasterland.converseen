@@ -25,7 +25,7 @@
                     "commit": "47c6f10607fd1b1e6e9226cd9869479902b65821",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^([\\d.]+)$"
+                        "tag-pattern": "^([\\d.-]+)$"
                     }
                 }
             ],
