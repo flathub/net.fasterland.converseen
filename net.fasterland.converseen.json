@@ -21,18 +21,19 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ImageMagick/ImageMagick",
-                    "tag": "7.1.0-47",
-                    "commit": "47c6f10607fd1b1e6e9226cd9869479902b65821",
+                    "tag": "7.1.0-62",
+                    "commit": "32ce406898b6f9992103cc0ee353f31a0e83f063",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^([\\d.-]+)$"
+                        "_tag-pattern": "^([\\d.-]+)$"
                     }
                 }
             ],
             "cleanup": [
                 "/include",
                 "/share/doc",
-                "/lib/*.la"
+                "/lib/*.la",
+                "/bin/{animate,compare,composite,conjure,display,identify,import,magick,magick-script,mogrify,montage,stream}"
             ]
         },
         {
@@ -43,8 +44,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.9.9.8",
-                    "commit": "ab48ae59abe3bf3ea611565a47283bee4ac87348",
+                    "tag": "v0.9.11.0",
+                    "commit": "411d0fcec60bef539e412b9ae2b7ac044deeea84",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
