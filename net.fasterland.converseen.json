@@ -301,7 +301,7 @@
                     "commit": "10ad43dc3e5113fa1969a55583a080c5a6a23f65",
                     "x-checker-data": {
                         "type": "git",
-                        "tag-pattern": "^([\\d.-]+)$"
+                        "_tag-pattern": "^([\\d.-]+)$"
                     }
                 }
             ],
