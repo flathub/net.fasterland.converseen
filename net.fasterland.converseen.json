@@ -18,21 +18,21 @@
         "--socket=wayland"
     ],
     "cleanup": [
-    "/doc",
-    "/include",
-    "/lib/cmake",
-    "/lib/libexec",
-    "/lib/pkgconfig",
-    "/bin/wmf*",
-    "/bin/libwmf-*",
-    "/man",
-    "/share/doc",
-    "/share/man",
-    "/share/pkgconfig",
-    "*.a"
+        "/doc",
+        "/include",
+        "/lib/cmake",
+        "/lib/libexec",
+        "/lib/pkgconfig",
+        "/bin/wmf*",
+        "/bin/libwmf-*",
+        "/man",
+        "/share/doc",
+        "/share/man",
+        "/share/pkgconfig",
+        "*.a"
     ],
     "modules": [
-    {
+        {
             "name": "libheif",
             "config-opts": [
                 "--disable-gdk-pixbuf"
@@ -297,8 +297,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/ImageMagick/ImageMagick",
-                    "tag": "7.1.1-4",
-                    "commit": "10ad43dc3e5113fa1969a55583a080c5a6a23f65",
+                    "tag": "7.0.7.7",
+                    "commit": "e12602b39b5e778240d286b6f9bbbc0fe3fb26c5",
                     "x-checker-data": {
                         "type": "git",
                         "_tag-pattern": "^([\\d.-]+)$"
