@@ -298,7 +298,7 @@
                     "sha256": "dd23689304b8cf41572c3af6b0ddccfe21c5b9d9abddaf978f314696408d0750",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": "1372",
+                        "project-id": 1372,
                         "stable-only": true,
                         "url-template": "https://github.com/ImageMagick/ImageMagick/archive/$version.tar.gz"
                     }
