@@ -219,14 +219,6 @@
                     }
                 },
                 {
-                    "type": "patch",
-                    "path": "patches/libwmf-ft2.patch"
-                },
-                {
-                    "type": "patch",
-                    "path": "patches/libwmf-autoheader.patch"
-                },
-                {
                     "type": "shell",
                     "commands": [
                         "cp -p /usr/share/automake-*/config.{sub,guess} .",
