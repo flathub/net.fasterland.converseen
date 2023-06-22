@@ -34,8 +34,14 @@
     "modules": [
         {
             "name": "libheif",
+            "buildsystem": "cmake",
             "config-opts": [
-                "--disable-gdk-pixbuf"
+                "-DWITH_LIBDE265_PLUGIN=On",
+                "-DPLUGIN_DIRECTORY=/app/lib/libheif-heic/lib",
+                "-DLIBDE265_INCLUDE_DIR=/app/lib/libheif-heic/include",
+                "-DLIBDE265_PKGCONF_LIBRARY_DIRS=/app/lib/libheif-heic/lib",
+                "-DWITH_X265=On",
+                "-DWITH_EXAMPLES=Off"
             ],
             "cleanup": [
                 "/bin",
@@ -55,8 +61,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/strukturag/libde265/releases/download/v1.0.11/libde265-1.0.11.tar.gz",
-                            "sha256": "2f8f12cabbdb15e53532b7c1eb964d4e15d444db1be802505e6ac97a25035bab",
+                            "url": "https://github.com/strukturag/libde265/releases/download/v1.0.12/libde265-1.0.12.tar.gz",
+                            "sha256": "62185ea2182e68cf68bba20cc6eb4c287407b509cf0a827d7ddb75614db77b5c",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 11239,
@@ -164,8 +170,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/releases/download/v1.15.2/libheif-1.15.2.tar.gz",
-                    "sha256": "7a4c6077f45180926583e2087571371bdd9cb21b6e6fada85a6fbd544f26a0e2",
+                    "url": "https://github.com/strukturag/libheif/releases/download/v1.16.2/libheif-1.16.2.tar.gz",
+                    "sha256": "7f97e4205c0bd9f9b8560536c8bd2e841d1c9a6d610401eb3eb87ed9cdfe78ea",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
@@ -244,8 +250,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10011/ghostscript-10.01.1.tar.gz",
-                    "sha256": "4df18a808cd4369f25e02dbcec2f133cb6d674627b2c6b1502020e58d43e32ce",
+                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10012/ghostscript-10.01.2.tar.gz",
+                    "sha256": "a4cd61a07fec161bee35da0211a5e5cde8ff8a0aaf942fc0176715e499d21661",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1157,
@@ -286,8 +292,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-8.tar.gz",
-                    "sha256": "cac2e4766f2cf1bd301b94ddcc86d6940d52190bfc1f31056eaa39e9cf2abe42",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-11.tar.gz",
+                    "sha256": "98bb2783da7d5b06e7543529bd07b50d034fba611ff15e8817a0f4f73957d934",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
