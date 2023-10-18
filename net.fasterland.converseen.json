@@ -170,8 +170,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/releases/download/v1.16.2/libheif-1.16.2.tar.gz",
-                    "sha256": "7f97e4205c0bd9f9b8560536c8bd2e841d1c9a6d610401eb3eb87ed9cdfe78ea",
+                    "url": "https://github.com/strukturag/libheif/releases/download/v1.17.0/libheif-1.17.0.tar.gz",
+                    "sha256": "c86661e9ef9c43ad8de9d2b38b7b508df5322580b24d22fc25a977e7fdb26f3c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
@@ -292,8 +292,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-18.tar.gz",
-                    "sha256": "77a49a5b7c8c5e85f21ce7ecb9e2a090de6b07a185090c9729577687729b7f18",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-20.tar.gz",
+                    "sha256": "8e2a0b5feaa6a8004b7d611e46984eb2217eeaff8347c5642e6ce84ecaf16446",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
@@ -317,8 +317,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.11.0.0",
-                    "commit": "7344c832bf0f80bf8e2010899adb21aa3a8729a5",
+                    "tag": "v0.11.0.1",
+                    "commit": "9a6bf5b2ac3f11a299813ac7690dcd5174b95c1a",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
