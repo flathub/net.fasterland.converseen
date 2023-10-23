@@ -170,8 +170,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/releases/download/v1.17.0/libheif-1.17.0.tar.gz",
-                    "sha256": "c86661e9ef9c43ad8de9d2b38b7b508df5322580b24d22fc25a977e7fdb26f3c",
+                    "url": "https://github.com/strukturag/libheif/releases/download/v1.17.1/libheif-1.17.1.tar.gz",
+                    "sha256": "97d74c58a346887c1bbf98dcf0322c13b728286153d0f1be2b350f7107e49dba",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
@@ -292,8 +292,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-20.tar.gz",
-                    "sha256": "8e2a0b5feaa6a8004b7d611e46984eb2217eeaff8347c5642e6ce84ecaf16446",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-21.tar.gz",
+                    "sha256": "09402e5f17c6575ef9f010bb2e21ae1710f1f3426f115ad4317ee9129c32608e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
