@@ -61,8 +61,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/strukturag/libde265/releases/download/v1.0.12/libde265-1.0.12.tar.gz",
-                            "sha256": "62185ea2182e68cf68bba20cc6eb4c287407b509cf0a827d7ddb75614db77b5c",
+                            "url": "https://github.com/strukturag/libde265/releases/download/v1.0.14/libde265-1.0.14.tar.gz",
+                            "sha256": "99f46ef77a438be639aa3c5d9632c0670541c5ed5d386524d4199da2d30df28f",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 11239,
@@ -170,8 +170,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/releases/download/v1.17.1/libheif-1.17.1.tar.gz",
-                    "sha256": "97d74c58a346887c1bbf98dcf0322c13b728286153d0f1be2b350f7107e49dba",
+                    "url": "https://github.com/strukturag/libheif/releases/download/v1.17.5/libheif-1.17.5.tar.gz",
+                    "sha256": "38ab01938ef419dbebb98346dc0b1c8bb503a0449ea61a0e409a988786c2af5b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
@@ -317,8 +317,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.11.0.1",
-                    "commit": "9a6bf5b2ac3f11a299813ac7690dcd5174b95c1a",
+                    "tag": "v0.12.0.0",
+                    "commit": "d1e617f8bd652f52e09a6927499cc076e0c5f28b",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
