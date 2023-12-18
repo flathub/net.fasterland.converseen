@@ -317,8 +317,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.12.0.0",
-                    "commit": "9b2821b5ed6673a7abebbe4ee42f4718ab366485",
+                    "tag": "v0.12.0.1",
+                    "commit": "99dbda6863f8c26791e8663f87311eae769f4f94",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
