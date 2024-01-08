@@ -292,8 +292,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-24.tar.gz",
-                    "sha256": "b98174148ddd875e64a861f5a4606c777bb7f33ac6b780886756f05ff971fb6f",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-25.tar.gz",
+                    "sha256": "983df08061bdcf95fe49146444fd1deb9c176b06359d3431053f59813c3e9668",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
@@ -317,8 +317,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.12.0.1",
-                    "commit": "99dbda6863f8c26791e8663f87311eae769f4f94",
+                    "tag": "v0.12.0.2",
+                    "commit": "f33dce4992791a5acc9f8382e97e527ede658208",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
