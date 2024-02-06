@@ -5,6 +5,7 @@
     "sdk": "org.kde.Sdk",
     "command": "converseen",
     "rename-appdata-file": "converseen.appdata.xml",
+    "rename-icon": "converseen",
     "finish-args": [
         "--device=dri",
         "--filesystem=xdg-pictures",
@@ -317,8 +318,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.12.0.2",
-                    "commit": "f33dce4992791a5acc9f8382e97e527ede658208",
+                    "tag": "v0.12.1.0",
+                    "commit": "190a0758010ac7dd15bc0f771e945bac9a37b9f1",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
