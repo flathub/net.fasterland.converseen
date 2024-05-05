@@ -384,8 +384,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-30.tar.gz",
-                    "sha256": "1f719ceb809e9b9b5f485af121be3df328c0acec6f714f5875a9bfb1512de074",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-32.tar.gz",
+                    "sha256": "fda0c1a5fdf511721893014370a6303413c70e0c11f2b543a7a4aff36f8c6e92",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
