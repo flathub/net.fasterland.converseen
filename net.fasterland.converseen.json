@@ -89,8 +89,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz",
-                            "sha256": "663531f341c5389f460d730e62e10a4fcca3428ca2ca109693867bc5fe2e2807",
+                            "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.0.tar.gz",
+                            "sha256": "75b4d05629e365913de3100b38a459b04e2a217a8f30efaa91b572d8e6d71282",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 7275,
@@ -122,8 +122,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz",
-                                    "sha256": "663531f341c5389f460d730e62e10a4fcca3428ca2ca109693867bc5fe2e2807",
+                                    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.0.tar.gz",
+                                    "sha256": "75b4d05629e365913de3100b38a459b04e2a217a8f30efaa91b572d8e6d71282",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7275,
@@ -151,8 +151,8 @@
                             "sources": [
                                 {
                                     "type": "archive",
-                                    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_3.6.tar.gz",
-                                    "sha256": "663531f341c5389f460d730e62e10a4fcca3428ca2ca109693867bc5fe2e2807",
+                                    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.0.tar.gz",
+                                    "sha256": "75b4d05629e365913de3100b38a459b04e2a217a8f30efaa91b572d8e6d71282",
                                     "x-checker-data": {
                                         "type": "anitya",
                                         "project-id": 7275,
@@ -342,8 +342,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10031/ghostscript-10.03.1.tar.gz",
-                    "sha256": "31cd01682ad23a801cc3bbc222a55f07c4ea3e068bdfb447792d54db21a2e8ad",
+                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostscript-10.04.0.tar.gz",
+                    "sha256": "c764dfbb7b13fc71a7a05c634e014f9bb1fb83b899fe39efc0b6c3522a9998b1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1157,
