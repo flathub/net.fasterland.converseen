@@ -42,7 +42,10 @@
                 "-DLIBDE265_INCLUDE_DIR=/app/lib/libheif-heic/include",
                 "-DLIBDE265_PKGCONF_LIBRARY_DIRS=/app/lib/libheif-heic/lib",
                 "-DWITH_X265=On",
-                "-DWITH_EXAMPLES=Off"
+                "-DWITH_EXAMPLES=Off",
+                "-DCMAKE_COMPILE_WARNING_AS_ERROR=OFF",
+                "-DWITH_OpenH264_DECODER=OFF",
+                "-DENABLE_PLUGIN_LOADING=OFF"
             ],
             "cleanup": [
                 "/bin",
@@ -171,8 +174,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/releases/download/v1.18.2/libheif-1.18.2.tar.gz",
-                    "sha256": "c4002a622bec9f519f29d84bfdc6024e33fd67953a5fb4dc2c2f11f67d5e45bf",
+                    "url": "https://github.com/strukturag/libheif/releases/download/v1.19.2/libheif-1.19.2.tar.gz",
+                    "sha256": "f73eb786e75ef1f815ed3d37aca9eadd41dc1d26dfde11f8a4f92f911622d19e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
