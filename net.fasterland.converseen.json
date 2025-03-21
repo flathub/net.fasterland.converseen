@@ -345,8 +345,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostscript-10.04.0.tar.gz",
-                    "sha256": "c764dfbb7b13fc71a7a05c634e014f9bb1fb83b899fe39efc0b6c3522a9998b1",
+                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10050/ghostscript-10.05.0.tar.gz",
+                    "sha256": "56e77833de683825c420d0af8cb90aa8ba7da71ea6fb5624290cbc1b53fe7942",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1157,
@@ -387,8 +387,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-44.tar.gz",
-                    "sha256": "c7cae9f885a995750909ee2ad79ea1f66a6a353f0c6da7b688aa4850aa1c26df",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.1-46.tar.gz",
+                    "sha256": "58cd8f7f2c9aaf49dba5af6f740a7a295cecb76493c475402265b3e7c21e3cd0",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
@@ -415,8 +415,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.12.2.5",
-                    "commit": "39d575adb82474017d9b4ba7c6be7156ec894564",
+                    "tag": "v0.13.0.0",
+                    "commit": "569c2a81e09052fe2ddb47faeb3ef5bd8a9179b3",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
