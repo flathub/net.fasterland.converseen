@@ -174,8 +174,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/releases/download/v1.19.8/libheif-1.19.8.tar.gz",
-                    "sha256": "6c4a5b08e6eae66d199977468859dea3b5e059081db8928f7c7c16e53836c906",
+                    "url": "https://github.com/strukturag/libheif/releases/download/v1.20.0/libheif-1.20.0.tar.gz",
+                    "sha256": "b2e08489b0c4a9d7ec44e546ee1e0c1ed9f5de066414d88d868987641eeee564",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 64439,
@@ -415,8 +415,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.14.0.0",
-                    "commit": "2b3e0083f39083c965023ec47e05ace651ab916f",
+                    "tag": "v0.15.0.0",
+                    "commit": "e6eb8132bec7c34b75781e33ffd917d2b5296168",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
