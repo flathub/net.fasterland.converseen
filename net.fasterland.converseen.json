@@ -102,47 +102,24 @@
             ]
         },
         {
-            "name": "Imath",
+            "name": "openexr",
             "buildsystem": "cmake-ninja",
+            "builddir": "true",
             "config-opts": [
+                "-DOPENEXR_BUILD_TOOLS=OFF",
+                "-DOPENEXR_INSTALL_TOOLS=OFF",
                 "-DBUILD_TESTING=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.12.tar.gz",
-                    "sha256": "8a1bc258f3149b5729c2f4f8ffd337c0e57f09096e4ba9784329f40c4a9035da",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 223366,
-                        "stable-only": true,
-                        "url-template": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v$version.tar.gz"
-                    }
-                }
-            ],
-            "cleanup": [
-                "/include/Imath",
-                "/lib/pkgconfig/Imath.pc"
-            ]
-        },
-        {
-            "name": "openexr",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DOPENEXR_BUILD_TOOLS=OFF",
-                "-DOPENEXR_INSTALL_EXAMPLES=OFF",
-                "-DOPENEXR_INSTALL_TOOLS=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.3.4.tar.gz",
-                    "sha256": "63abac7c52f280e3e16fc868ac40e06449733bb19179008248ae7e34e4f19824",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.3.4/openexr-3.3.4.tar.gz",
+                    "sha256": "73a6d83edcc68333afb95e133f6e12012073815a854bc41abc1a01c1db5f124c",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
                         "stable-only": true,
-                        "url-template": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v$version.tar.gz"
+                        "url-template": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v$version/openexr-$version.tar.gz"
                     }
                 }
             ],
@@ -152,6 +129,59 @@
                 "/lib/*.la",
                 "/lib/pkgconfig",
                 "/share/aclocal"
+            ],
+            "modules": [
+                {
+                    "name": "Imath",
+                    "buildsystem": "cmake-ninja",
+                    "config-opts": [
+                        "-DBUILD_TESTING=OFF"
+                    ],
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.12.tar.gz",
+                            "sha256": "8a1bc258f3149b5729c2f4f8ffd337c0e57f09096e4ba9784329f40c4a9035da",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 223366,
+                                "stable-only": true,
+                                "url-template": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v$version.tar.gz"
+                            }
+                        }
+                    ],
+                    "cleanup": [
+                        "/include/Imath",
+                        "/lib/pkgconfig/Imath.pc"
+                    ]
+                },
+                {
+                    "name": "libdeflate",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.24.zip",
+                            "sha256": "1e33358dc545a3258af213e2fb0ebb84e6d970bb098d774c33bdacfbdde4a087",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 242778,
+                                "stable-only": true,
+                                "url-template": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v$version.zip"
+                            }
+                        }
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "config-opts": [
+                        "-DLIBDEFLATE_BUILD_STATIC_LIB=OFF",
+                        "-DLIBDEFLATE_GZIP_SUPPORT=OFF",
+                        "-DLIBDEFLATE_BUILD_GZIP=OFF"
+                    ],
+                    "cleanup": [
+                        "/include",
+                        "/lib/pkgconfig"
+                    ]
+                }
             ]
         },
         {
