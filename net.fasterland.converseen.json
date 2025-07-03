@@ -1,7 +1,7 @@
 {
     "id": "net.fasterland.converseen",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "converseen",
     "rename-appdata-file": "converseen.appdata.xml",
