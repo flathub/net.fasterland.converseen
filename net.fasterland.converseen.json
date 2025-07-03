@@ -59,8 +59,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.libraw.org/data/LibRaw-0.21.1.tar.gz",
-                    "sha256": "630a6bcf5e65d1b1b40cdb8608bdb922316759bfb981c65091fec8682d1543cd"
+                    "url": "https://www.libraw.org/data/LibRaw-0.21.4.tar.gz",
+                    "sha256": "6be43f19397e43214ff56aab056bf3ff4925ca14012ce5a1538a172406a09e63",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1709,
+                        "stable-only": true,
+                        "url-template": "https://www.libraw.org/data/LibRaw-$version.tar.gz"
+                    }
                 }
             ]
         },
