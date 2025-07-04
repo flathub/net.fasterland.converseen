@@ -10,7 +10,8 @@
         "org.freedesktop.Platform.ffmpeg-full": {
             "version": "24.08",
             "directory": "lib/ffmpeg",
-            "add-ld-path": "."
+            "add-ld-path": ".",
+            "no-autodownload": false
         }
     },
     "cleanup-commands": [
