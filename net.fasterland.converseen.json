@@ -1,11 +1,21 @@
 {
     "id": "net.fasterland.converseen",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.9",
     "sdk": "org.kde.Sdk",
     "command": "converseen",
     "rename-appdata-file": "converseen.appdata.xml",
     "rename-icon": "converseen",
+    "add-extensions": {
+        "org.freedesktop.Platform.ffmpeg-full": {
+            "version": "24.08",
+            "directory": "lib/ffmpeg",
+            "add-ld-path": "."
+        }
+    },
+    "cleanup-commands": [
+        "mkdir -p ${FLATPAK_DEST}/lib/ffmpeg"
+    ],
     "finish-args": [
         "--device=dri",
         "--filesystem=xdg-pictures",
@@ -34,158 +44,6 @@
     ],
     "modules": [
         {
-            "name": "libheif",
-            "buildsystem": "cmake",
-            "config-opts": [
-                "-DWITH_LIBDE265_PLUGIN=On",
-                "-DPLUGIN_DIRECTORY=/app/lib/libheif-heic/lib",
-                "-DLIBDE265_INCLUDE_DIR=/app/lib/libheif-heic/include",
-                "-DLIBDE265_PKGCONF_LIBRARY_DIRS=/app/lib/libheif-heic/lib",
-                "-DWITH_X265=On",
-                "-DWITH_EXAMPLES=Off",
-                "-DCMAKE_COMPILE_WARNING_AS_ERROR=OFF",
-                "-DWITH_OpenH264_DECODER=OFF",
-                "-DENABLE_PLUGIN_LOADING=OFF"
-            ],
-            "cleanup": [
-                "/bin",
-                "/share/thumbnailers"
-            ],
-            "modules": [
-                {
-                    "name": "libde265",
-                    "config-opts": [
-                        "--disable-dec265",
-                        "--disable-encoder",
-                        "--disable-sherlock265"
-                    ],
-                    "cleanup": [
-                        "/bin"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://github.com/strukturag/libde265/releases/download/v1.0.16/libde265-1.0.16.tar.gz",
-                            "sha256": "b92beb6b53c346db9a8fae968d686ab706240099cdd5aff87777362d668b0de7",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 11239,
-                                "stable-only": true,
-                                "url-template": "https://github.com/strukturag/libde265/releases/download/v$version/libde265-$version.tar.gz"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "libx265",
-                    "buildsystem": "cmake",
-                    "subdir": "source",
-                    "config-opts": [
-                        "-DEXTRA_LIB='libx265-10.a;libx265-12.a'",
-                        "-DEXTRA_LINK_FLAGS=-L.",
-                        "-DLINKED_10BIT=ON",
-                        "-DLINKED_12BIT=ON"
-                    ],
-                    "cleanup": [
-                        "/bin"
-                    ],
-                    "sources": [
-                        {
-                            "type": "archive",
-                            "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz",
-                            "sha256": "a31699c6a89806b74b0151e5e6a7df65de4b49050482fe5ebf8a4379d7af8f29",
-                            "x-checker-data": {
-                                "type": "anitya",
-                                "project-id": 7275,
-                                "stable-only": true,
-                                "url-template": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_$version.tar.gz"
-                            }
-                        },
-                        {
-                            "type": "shell",
-                            "commands": [
-                                "ln -s ${FLATPAK_DEST}/lib/libx265-10.a",
-                                "ln -s ${FLATPAK_DEST}/lib/libx265-12.a",
-                                "rm -fr ${FLATPAK_DEST}/lib/libx265.so*"
-                            ]
-                        }
-                    ],
-                    "modules": [
-                        {
-                            "name": "libx265-10bpc",
-                            "buildsystem": "cmake",
-                            "subdir": "source",
-                            "config-opts": [
-                                "-DHIGH_BIT_DEPTH=ON",
-                                "-DEXPORT_C_API=OFF",
-                                "-DENABLE_SHARED=OFF",
-                                "-DENABLE_CLI=OFF",
-                                "-DENABLE_ASSEMBLY=OFF"
-                            ],
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz",
-                                    "sha256": "a31699c6a89806b74b0151e5e6a7df65de4b49050482fe5ebf8a4379d7af8f29",
-                                    "x-checker-data": {
-                                        "type": "anitya",
-                                        "project-id": 7275,
-                                        "stable-only": true,
-                                        "url-template": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_$version.tar.gz"
-                                    }
-                                }
-                            ],
-                            "post-install": [
-                                "mv ${FLATPAK_DEST}/lib/libx265.a ${FLATPAK_DEST}/lib/libx265-10.a"
-                            ]
-                        },
-                        {
-                            "name": "libx265-12bpc",
-                            "buildsystem": "cmake",
-                            "subdir": "source",
-                            "config-opts": [
-                                "-DHIGH_BIT_DEPTH=ON",
-                                "-DEXPORT_C_API=OFF",
-                                "-DENABLE_SHARED=OFF",
-                                "-DENABLE_CLI=OFF",
-                                "-DENABLE_ASSEMBLY=OFF",
-                                "-DMAIN12=ON"
-                            ],
-                            "sources": [
-                                {
-                                    "type": "archive",
-                                    "url": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_4.1.tar.gz",
-                                    "sha256": "a31699c6a89806b74b0151e5e6a7df65de4b49050482fe5ebf8a4379d7af8f29",
-                                    "x-checker-data": {
-                                        "type": "anitya",
-                                        "project-id": 7275,
-                                        "stable-only": true,
-                                        "url-template": "https://bitbucket.org/multicoreware/x265_git/downloads/x265_$version.tar.gz"
-                                    }
-                                }
-                            ],
-                            "post-install": [
-                                "mv ${FLATPAK_DEST}/lib/libx265.a ${FLATPAK_DEST}/lib/libx265-12.a"
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/strukturag/libheif/releases/download/v1.20.1/libheif-1.20.1.tar.gz",
-                    "sha256": "55cc76b77c533151fc78ba58ef5ad18562e84da403ed749c3ae017abaf1e2090",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 64439,
-                        "stable-only": true,
-                        "url-template": "https://github.com/strukturag/libheif/releases/download/v$version/libheif-$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "libraw",
             "config-opts": [
                 "--disable-examples",
@@ -201,8 +59,14 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://www.libraw.org/data/LibRaw-0.21.1.tar.gz",
-                    "sha256": "630a6bcf5e65d1b1b40cdb8608bdb922316759bfb981c65091fec8682d1543cd"
+                    "url": "https://www.libraw.org/data/LibRaw-0.21.4.tar.gz",
+                    "sha256": "6be43f19397e43214ff56aab056bf3ff4925ca14012ce5a1538a172406a09e63",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 1709,
+                        "stable-only": true,
+                        "url-template": "https://www.libraw.org/data/LibRaw-$version.tar.gz"
+                    }
                 }
             ]
         },
@@ -238,36 +102,25 @@
             ]
         },
         {
-            "name": "Imath",
+            "name": "openexr",
             "buildsystem": "cmake-ninja",
+            "builddir": "true",
             "config-opts": [
+                "-DOPENEXR_BUILD_TOOLS=OFF",
+                "-DOPENEXR_INSTALL_TOOLS=OFF",
                 "-DBUILD_TESTING=OFF"
             ],
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.7.tar.gz",
-                    "sha256": "bff1fa140f4af0e7f02c6cb78d41b9a7d5508e6bcdfda3a583e35460eb6d4b47"
-                }
-            ],
-            "cleanup": [
-                "/include/Imath",
-                "/lib/pkgconfig/Imath.pc"
-            ]
-        },
-        {
-            "name": "openexr",
-            "buildsystem": "cmake-ninja",
-            "config-opts": [
-                "-DOPENEXR_BUILD_TOOLS=OFF",
-                "-DOPENEXR_INSTALL_EXAMPLES=OFF",
-                "-DOPENEXR_INSTALL_TOOLS=OFF"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/archive/refs/tags/v3.1.7.tar.gz",
-                    "sha256": "78dbca39115a1c526e6728588753955ee75fa7f5bb1a6e238bed5b6d66f91fd7"
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.3.4/openexr-3.3.4.tar.gz",
+                    "sha256": "73a6d83edcc68333afb95e133f6e12012073815a854bc41abc1a01c1db5f124c",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 13289,
+                        "stable-only": true,
+                        "url-template": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v$version/openexr-$version.tar.gz"
+                    }
                 }
             ],
             "cleanup": [
@@ -276,55 +129,58 @@
                 "/lib/*.la",
                 "/lib/pkgconfig",
                 "/share/aclocal"
-            ]
-        },
-        {
-            "name": "libjxl",
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "config-opts": [
-                "-DBUILD_TESTING=OFF",
-                "-DJPEGXL_ENABLE_BENCHMARK=OFF",
-                "-DJPEGXL_ENABLE_DOXYGEN=OFF",
-                "-DJPEGXL_ENABLE_EXAMPLES=OFF",
-                "-DJPEGXL_ENABLE_JNI=OFF",
-                "-DJPEGXL_ENABLE_MANPAGES=OFF",
-                "-DJPEGXL_ENABLE_PLUGINS=OFF",
-                "-DJPEGXL_ENABLE_SJPEG=OFF",
-                "-DJPEGXL_ENABLE_SKCMS=OFF",
-                "-DJPEGXL_ENABLE_TCMALLOC=OFF",
-                "-DJPEGXL_ENABLE_TOOLS=OFF",
-                "-DJPEGXL_FORCE_SYSTEM_BROTLI=ON",
-                "-DJPEGXL_FORCE_SYSTEM_HWY=ON",
-                "-DJPEGXL_FORCE_SYSTEM_LCMS2=ON",
-                "-DJPEGXL_WARNINGS_AS_ERRORS=OFF"
             ],
             "modules": [
                 {
-                    "name": "libhwy",
-                    "config-opts": [
-                        "-DBUILD_TESTING=OFF",
-                        "-DBUILD_SHARED_LIBS=OFF",
-                        "-DHWY_ENABLE_EXAMPLES=OFF",
-                        "-DHWY_ENABLE_TESTS=OFF",
-                        "-DHWY_FORCE_STATIC_LIBS=ON"
-                    ],
+                    "name": "Imath",
                     "buildsystem": "cmake-ninja",
-                    "builddir": true,
+                    "config-opts": [
+                        "-DBUILD_TESTING=OFF"
+                    ],
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/google/highway/archive/refs/tags/1.0.2.tar.gz",
-                            "sha256": "e8ef71236ac0d97f12d553ec1ffc5b6375d57b5f0b860c7447dd69b6ed1072db"
+                            "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.1.12.tar.gz",
+                            "sha256": "8a1bc258f3149b5729c2f4f8ffd337c0e57f09096e4ba9784329f40c4a9035da",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 223366,
+                                "stable-only": true,
+                                "url-template": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v$version.tar.gz"
+                            }
                         }
+                    ],
+                    "cleanup": [
+                        "/include/Imath",
+                        "/lib/pkgconfig/Imath.pc"
                     ]
-                }
-            ],
-            "sources": [
+                },
                 {
-                    "type": "archive",
-                    "url": "https://github.com/libjxl/libjxl/archive/refs/tags/v0.7.0.tar.gz",
-                    "sha256": "3114bba1fabb36f6f4adc2632717209aa6f84077bc4e93b420e0d63fa0455c5e"
+                    "name": "libdeflate",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.24.zip",
+                            "sha256": "1e33358dc545a3258af213e2fb0ebb84e6d970bb098d774c33bdacfbdde4a087",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 242778,
+                                "stable-only": true,
+                                "url-template": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v$version.zip"
+                            }
+                        }
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "config-opts": [
+                        "-DLIBDEFLATE_BUILD_STATIC_LIB=OFF",
+                        "-DLIBDEFLATE_GZIP_SUPPORT=OFF",
+                        "-DLIBDEFLATE_BUILD_GZIP=OFF"
+                    ],
+                    "cleanup": [
+                        "/include",
+                        "/lib/pkgconfig"
+                    ]
                 }
             ]
         },
