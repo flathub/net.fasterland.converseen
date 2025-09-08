@@ -113,8 +113,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.3.5/openexr-3.3.5.tar.gz",
-                    "sha256": "8f9241f0e9d6b7aec7e9509cf2a9224416b9cd9d41740deab3827b1f2d01c662",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.0/openexr-3.4.0.tar.gz",
+                    "sha256": "1d4bddda2d22571f63db5f067c5741b50c8d41231f360ab17063176eb710a670",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -175,6 +175,32 @@
                         "-DLIBDEFLATE_BUILD_STATIC_LIB=OFF",
                         "-DLIBDEFLATE_GZIP_SUPPORT=OFF",
                         "-DLIBDEFLATE_BUILD_GZIP=OFF"
+                    ],
+                    "cleanup": [
+                        "/include",
+                        "/lib/pkgconfig"
+                    ]
+                },
+                {
+                    "name": "openjph",
+                    "sources": [
+                        {
+                            "type": "archive",
+                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.22.0.tar.gz",
+                            "sha256": "c9c6e9ec82ee8770ede41eeffe8acaab1814724c698b258c3de160dc09cb7d12",
+                            "x-checker-data": {
+                                "type": "anitya",
+                                "project-id": 375199,
+                                "stable-only": true,
+                                "url-template": "https://github.com/aous72/OpenJPH/archive/refs/tags/$version.tar.gz"
+                            }
+                        }
+                    ],
+                    "buildsystem": "cmake-ninja",
+                    "builddir": true,
+                    "config-opts": [
+                        "-DOJPH_ENABLE_TIFF_SUPPORT=OFF",
+                        "-DOJPH_BUILD_EXECUTABLES=OFF"  
                     ],
                     "cleanup": [
                         "/include",
@@ -242,8 +268,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-2.tar.gz",
-                    "sha256": "f511deb5827b07906e0558640a436a96644949dfd6bb21b1a641b09690ac3bdc",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-3.tar.gz",
+                    "sha256": "b16415e8694a2e15e5282d64fc7b358f309ff3a514a90eb5da268676c772de3d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
