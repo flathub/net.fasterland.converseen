@@ -302,8 +302,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.15.0.2",
-                    "commit": "826ae53b94899f6fa151016d438dd5dc32095c9b",
+                    "tag": "v0.15.0.3",
+                    "commit": "48403efdef46e1e7e00f6638fa4265cdcb8e1238",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
