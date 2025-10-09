@@ -113,8 +113,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.0/openexr-3.4.0.tar.gz",
-                    "sha256": "1d4bddda2d22571f63db5f067c5741b50c8d41231f360ab17063176eb710a670",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.1/openexr-3.4.1.tar.gz",
+                    "sha256": "55de71610ceb134b79c900e6aed3bf8994ec1972382395c1732f1b32da4c7527",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -140,8 +140,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.2.1.tar.gz",
-                            "sha256": "b2c8a44c3e4695b74e9644c76f5f5480767355c6f98cde58ba0e82b4ad8c63ce",
+                            "url": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v3.2.2.tar.gz",
+                            "sha256": "b4275d83fb95521510e389b8d13af10298ed5bed1c8e13efd961d91b1105e462",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 223366,
@@ -186,8 +186,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.22.0.tar.gz",
-                            "sha256": "c9c6e9ec82ee8770ede41eeffe8acaab1814724c698b258c3de160dc09cb7d12",
+                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.24.2.tar.gz",
+                            "sha256": "c99218752b15b5b2afca3b0e4d4f0ddf1ac19f94dbcbe11874fe492d44ed3e2d",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 375199,
@@ -275,8 +275,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-4.tar.gz",
-                    "sha256": "ae7a96690ff4c2216c70cd131f359d2e4b4521e36e4fbd7650232f0f4c8a452e",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-5.tar.gz",
+                    "sha256": "9ecb0c491c372de74579fc37b53e84d7a22a1bf02efb5bf940f811d3d0005e7f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
