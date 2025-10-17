@@ -113,8 +113,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.1/openexr-3.4.1.tar.gz",
-                    "sha256": "55de71610ceb134b79c900e6aed3bf8994ec1972382395c1732f1b32da4c7527",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.2/openexr-3.4.2.tar.gz",
+                    "sha256": "4246e9bbe706016b282e6503538e9a3ded72c67e6b25c4364d7571f04ce85a9a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -302,8 +302,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.15.0.3",
-                    "commit": "48403efdef46e1e7e00f6638fa4265cdcb8e1238",
+                    "tag": "v0.15.1.0",
+                    "commit": "0fddbd5cabfca945c0a2e5773e59cdc881c8f781",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
