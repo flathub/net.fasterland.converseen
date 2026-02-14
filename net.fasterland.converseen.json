@@ -259,7 +259,10 @@
                 "--with-djvu",
                 "--without-dps",
                 "--without-fpx",
-                "--with-heic=yes"
+                "--with-heic=yes",
+                "--with-jxl=yes",
+                "--with-fftw=yes",
+                "--with-freetype=yes"
             ],
             "sources": [
                 {
