@@ -24,12 +24,11 @@
         "/lib/cmake",
         "/lib/libexec",
         "/lib/pkgconfig",
-        "/bin/wmf*",
-        "/bin/libwmf-*",
         "/man",
         "/share/doc",
         "/share/man",
         "/share/pkgconfig",
+        "*.la",
         "*.a"
     ],
     "modules": [
@@ -42,9 +41,6 @@
                 "--enable-jpeg",
                 "--enable-lcms",
                 "--enable-openmp"
-            ],
-            "cleanup": [
-                "/share/doc"
             ],
             "sources": [
                 {
@@ -67,7 +63,6 @@
                 "--disable-dependency-tracking"
             ],
             "cleanup": [
-                "/share/doc",
                 "/bin"
             ],
             "sources": [
@@ -114,10 +109,7 @@
             ],
             "cleanup": [
                 "/bin",
-                "/include",
-                "/lib/*.la",
-                "/lib/pkgconfig",
-                "/share/aclocal"
+                "/share/aclocal"                
             ],
             "modules": [
                 {
@@ -138,10 +130,6 @@
                                 "url-template": "https://github.com/AcademySoftwareFoundation/Imath/archive/refs/tags/v$version.tar.gz"
                             }
                         }
-                    ],
-                    "cleanup": [
-                        "/include/Imath",
-                        "/lib/pkgconfig/Imath.pc"
                     ]
                 },
                 {
@@ -164,10 +152,6 @@
                         "-DLIBDEFLATE_BUILD_STATIC_LIB=OFF",
                         "-DLIBDEFLATE_GZIP_SUPPORT=OFF",
                         "-DLIBDEFLATE_BUILD_GZIP=OFF"
-                    ],
-                    "cleanup": [
-                        "/include",
-                        "/lib/pkgconfig"
                     ]
                 },
                 {
@@ -190,10 +174,6 @@
                     "config-opts": [
                         "-DOJPH_ENABLE_TIFF_SUPPORT=OFF",
                         "-DOJPH_BUILD_EXECUTABLES=OFF"
-                    ],
-                    "cleanup": [
-                        "/include",
-                        "/lib/pkgconfig"
                     ]
                 }
             ]
@@ -215,8 +195,6 @@
             ],
             "cleanup": [
                 "/bin",
-                "/include",
-                "/lib/pkgconfig",
                 "/share"
             ],
             "sources": [
@@ -275,9 +253,6 @@
                 }
             ],
             "cleanup": [
-                "/include",
-                "/share/doc",
-                "/lib/*.la",
                 "/bin"
             ]
         },
