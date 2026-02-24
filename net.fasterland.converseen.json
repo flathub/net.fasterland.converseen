@@ -68,8 +68,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/caolanm/libwmf/archive/refs/tags/v0.2.13.tar.gz",
-                    "sha512": "f45a936c9bc98fc1a5f2b0808b497119e4dcd3c132615fdddb7583e5719c7d1d7f85c16ebf313cad453e5b7ae3508bf6b80c4ed2b42322b7dec295d8f4eb86ce",
+                    "url": "https://github.com/caolanm/libwmf/archive/refs/tags/v0.2.14.tar.gz",
+                    "sha512": "5f2068e89eb3998acd40a7d7272f2bba7d8366b1bf647ba10a4415cca2229ae5d8175140e49ea232c7e16887c64e9129df9f0effd045bf96887f2eada4e10992",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 230209,
@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.4/openexr-3.4.4.tar.gz",
-                    "sha256": "91fc5670f13fe7d9d3b7ae0fe695e3cc813200839084eae6497459e7f650d876",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.5/openexr-3.4.5.tar.gz",
+                    "sha256": "3e3b0c697acb7383ed476276e8ca3933d1e099249c080d3c91642515e6b5b84a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -109,7 +109,7 @@
             ],
             "cleanup": [
                 "/bin",
-                "/share/aclocal"                
+                "/share/aclocal"
             ],
             "modules": [
                 {
@@ -159,8 +159,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.26.0.tar.gz",
-                            "sha256": "359fa26e5c6becc64f7f9fa339600e00ca3164af7d988aa1fbf16d527347baf4",
+                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.26.3.tar.gz",
+                            "sha256": "29de006da7f1e8cf0cd7c3ec424cf29103e465052c00b5a5f0ccb7e1f917bb3f",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 375199,
@@ -242,8 +242,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-13.tar.gz",
-                    "sha256": "3617bffe497690ffe5b731227d026db1150e138ddb129481a1e202442e558512",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-15.tar.gz",
+                    "sha256": "bf646e7fffdf50b7d886eec6bbe51c3ced1c4d68fbabfcc534e014575359fe7f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
