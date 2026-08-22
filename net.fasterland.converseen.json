@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.14/openexr-3.4.14.tar.gz",
-                    "sha256": "174d0d711d963c46eaa7cd2669d6cb1ea52579f43aa2726892f0b9554339ba6b",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.15/openexr-3.4.15.tar.gz",
+                    "sha256": "ab893d8003773ccd9a5556b2caf38da591ae37e20b06ee9d589a08984c5191f2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
