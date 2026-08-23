@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.14/openexr-3.4.14.tar.gz",
-                    "sha256": "174d0d711d963c46eaa7cd2669d6cb1ea52579f43aa2726892f0b9554339ba6b",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.15/openexr-3.4.15.tar.gz",
+                    "sha256": "ab893d8003773ccd9a5556b2caf38da591ae37e20b06ee9d589a08984c5191f2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -137,8 +137,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.25.zip",
-                            "sha256": "5ce391d1d09ff2f6b21af492fa72bd693e416a4a682ec48c04f91e5c0e16f383",
+                            "url": "https://github.com/ebiggers/libdeflate/archive/refs/tags/v1.26.zip",
+                            "sha256": "cc64b9177e8c7eed2d3960a3dd9b0aa061ddc4c43c9067af1209e208e4a8144f",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 242778,
@@ -242,8 +242,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-29.tar.gz",
-                    "sha256": "b05924ad73c6932ba62c9b32f338f0619b90b767162c8b767f3566556187a284",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-30.tar.gz",
+                    "sha256": "3034a64f22398e15ee3dd1e6b1aa83d838cfc47df1bb246ae0eca9590e6ace72",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
