@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.4.15/openexr-3.4.15.tar.gz",
-                    "sha256": "ab893d8003773ccd9a5556b2caf38da591ae37e20b06ee9d589a08984c5191f2",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.5.0/openexr-3.5.0.tar.gz",
+                    "sha256": "2ee8d3551170614a659a49bcf81ce59dd72c68b2b8eb73c08036225140ba283a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -159,8 +159,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.31.0.tar.gz",
-                            "sha256": "fe169dbbaae71a169a0a6a68dccb346616193252c1ca044217afa0d5d1dc436f",
+                            "url": "https://github.com/aous72/OpenJPH/archive/refs/tags/0.32.0.tar.gz",
+                            "sha256": "5cb1ebe18e5ee1322d23ff2130b37562d447d1ad5586c3d16cf84be3ae30f719",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 375199,
@@ -200,8 +200,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10071/ghostscript-10.07.1.tar.gz",
-                    "sha256": "2fc74362f9be6fae1b0a65d38fdcfd4f0b518cc3b07c5581fb661eb4d2e15251",
+                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10080/ghostscript-10.08.0.tar.gz",
+                    "sha256": "caf199e3f233f1290b27d0972d636f66c303355f2353309b7bfddf1edda06b3d",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1157,
