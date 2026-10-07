@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.5.0/openexr-3.5.0.tar.gz",
-                    "sha256": "2ee8d3551170614a659a49bcf81ce59dd72c68b2b8eb73c08036225140ba283a",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.5.2/openexr-3.5.2.tar.gz",
+                    "sha256": "e5750af57bbed556b462cbf0c39550d9063b2028c0184ec65fe42fdae458cdea",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
@@ -242,8 +242,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-31.tar.gz",
-                    "sha256": "34d9cc3acddc3e3c429d23af60eda5ceaac477a8b296ddb9469f773f44a80a5f",
+                    "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.2-32.tar.gz",
+                    "sha256": "940e349f0ef394e658fd57400b83d1d7a81b954f6e7bdbfbfad31b2718c10add",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1372,
@@ -266,8 +266,8 @@
                 {
                     "type": "git",
                     "url": "https://github.com/Faster3ck/Converseen.git",
-                    "tag": "v0.15.2.8",
-                    "commit": "ad9f4d535434beab92315ba3fca4301cff57ac6c",
+                    "tag": "v0.15.2.9",
+                    "commit": "e87fefeb449caf7cd8184a3dfd2ae86f2f2370b6",
                     "x-checker-data": {
                         "type": "git",
                         "tag-pattern": "^v([\\d.]+)$"
