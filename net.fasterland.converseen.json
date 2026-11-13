@@ -69,13 +69,13 @@
                 {
                     "type": "archive",
                     "url": "https://github.com/caolanm/libwmf/archive/refs/tags/v0.2.16.tar.gz",
-                    "sha512": "f6c48e557b9cb69910fc106db2fa497c44c0e5fc5088f353abdc981746db5a5015a4ee0749f0ec713da3d0275a1f5f9e27e93430d26b9cacb574cd28928e1714"
-                    /*"x-checker-data": {
+                    "sha512": "f6c48e557b9cb69910fc106db2fa497c44c0e5fc5088f353abdc981746db5a5015a4ee0749f0ec713da3d0275a1f5f9e27e93430d26b9cacb574cd28928e1714",
+                    "x-checker-data": {
                         "type": "anitya",
                        "project-id": 230209,
                         "stable-only": true,
                         "url-template": "https://github.com/caolanm/libwmf/archive/refs/tags/v$version.tar.gz"
-                    }*/
+                    }
                 },
                 {
                     "type": "shell",
@@ -97,8 +97,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.5.3/openexr-3.5.3.tar.gz",
-                    "sha256": "aa84c2979d614a1bb5870da64d9fb4969deda8bf4f8166e7393bfd81e40af305",
+                    "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/download/v3.5.4/openexr-3.5.4.tar.gz",
+                    "sha256": "a09706c88ab83a90c26e7ee06cb7e6fa03a57726931eaec557c2e7eaf35c1b13",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 13289,
